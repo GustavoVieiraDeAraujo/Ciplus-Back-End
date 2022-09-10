@@ -39,6 +39,7 @@ Users.init({
     cpf:{
         type: DataTypes.STRING,
         allowNull: false,
+        unique: true,
         validate: {
             notNull: true,
             is: /[0-9]{3}[\.][0-9]{3}[\.][0-9]{3}[-][0-9]{2}/,
@@ -48,6 +49,7 @@ Users.init({
     email:{
         type: DataTypes.STRING,
         allowNull: false,
+        unique: true,
         validate: {
             notNull: true,
             isEmail: true,

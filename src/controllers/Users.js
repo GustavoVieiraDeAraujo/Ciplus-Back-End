@@ -111,7 +111,7 @@ export const ControllerUsers = {
             if (Array.isArray(request.body)){
                 try{
                     for (let i = 0; i< request.body.length; i++){
-                        const id = request.body[i]
+                        const id = request.body.lista[i]
                         const User = await Users.findByPk(id)
                         if (!User){
                             throw new Error(`User with id ${id} not found`)
