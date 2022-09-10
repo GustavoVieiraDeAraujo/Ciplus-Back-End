@@ -1,4 +1,7 @@
-import { Movies } from "../models/Movies.js"
+import { Movies } from "./models/Movies.js"
+import { Plans } from "./models/Plans.js"
+import {Tickets} from "./models/Tickets.js"
+import {Users} from "./models/Users.js"
 
 await Movies.create({
     'name':"ÓRFÃ 2: A ORIGEM",
@@ -101,4 +104,144 @@ await Movies.create({
     'genre': "DRAMA / SUSPENSE",
     'duration_minutes': 126,
     'movie_sessions': '12:00/12:30/13:00/13:30'
+})
+
+await Plans.create({
+    'type':"Plan Basic",
+    'price': 5000,
+    'benefits':"1 ingresso Bronze por mês, 25% de desconto no combo de pipoca e refrigerante",
+    'duration_months': 1
+})
+
+await Plans.create({
+    'type':"Plan Standart",
+    'price': 7990,
+    'benefits':"2 ingressos Prata por mês, 35% de desconto no combo de pipoca e refrigerante, 35% de descontos nas salas IMAX 4K e 3D",
+    'duration_months': 1
+})
+
+await Plans.create({
+    'type':"Plan Premium",
+    'price': 9990,
+    'benefits':"3 ingressos Gold por mês, 60% de desconto no combo de pipoca e refrigerante, 60% de descontos nas salas IMAX 4K e 3D",
+    'duration_months': 1
+})
+
+
+await Plans.create({
+    'type':"Plan Black Duo",
+    'price': 15990,
+    'benefits':"4 ingressos Duplos Platina por mês, combo de pipoca e refrigerante inclusos, salas IMAX 4K e 3D inclusos ",
+    'duration_months': 1
+})
+
+await Tickets.create({
+    'type':"bronze",
+    'price': 1500,
+    'description':"Acesso à sala bronze",
+    'score': 5
+})
+
+await Tickets.create({
+    'type':"prata",
+    'price': 2500,
+    'description':"Acesso à sala prata",
+    'score': 10
+})
+
+
+await Tickets.create({
+    'type':"gold",
+    'price': 3500,
+    'description':"Acesso à sala gold",
+    'score': 15
+})
+
+
+await Tickets.create({
+    'type':"platina",
+    'price': 4500,
+    'description':"Acesso à sala platina",
+    'score': 20
+})
+
+
+await Tickets.create({
+    'type':"diamante",
+    'price': 5500,
+    'description':"Acesso à sala diamante",
+    'score': 25
+})
+
+await Users.create({
+    "name":"Amanda Pereira da Silva",
+    "age": 24,
+    "birthday": "1996-05-18",
+    "cell_phone_number": "(31) 98788-9999",
+    "cpf":"899.999.999-91",
+    "email":"amanda.silva@gmail.com",
+    "password":"Am@nda9605",
+    "amount_points": 500,
+    "plan_id": 1
+})
+
+await Users.create({
+    "name":"Luciane Diniz Oliveira",
+    "age": 40,
+    "birthday": "1982-03-21",
+    "cell_phone_number": "(81) 97788-9919",
+    "cpf":"199.999.999-92",
+    "email":"luciane.diniz@yahoo.com",
+    "password":"Oliveir@2103",
+    "amount_points": 200,
+    "plan_id": 2
+})
+
+
+await Users.create({
+    "name":"Carlos Alberto da Silva",
+    "age": 33,
+    "birthday": "1989-01-08",
+    "cell_phone_number": "(81) 98188-9912",
+    "cpf":"119.999.999-91",
+    "email":"carlos1989@gmail.com",
+    "password":"Albertosilv@",
+    "amount_points": 800,
+    "plan_id": 3
+})
+
+await Users.create({
+    "name":"Alexandre bastos",
+    "age": 20,
+    "birthday": "2002-03-21",
+    "cell_phone_number":"(75) 99188-7565",
+    "cpf":"089.456.999-04",
+    "email":"ale21@gmail.com",
+    "password":"al3bastos",
+    "amount_points": 4500,
+    "plan_id": 4
+})
+
+await Users.create({
+    "name": "Luma",
+    "age": 20,
+    "birthday": "2003-03-08",
+    "cell_phone_number":"(81) 97718-9919",
+    "cpf":"087.145.321-04",
+    "email":"luma.novo@gmail.com",
+    "password":"Luma123",
+    "amount_points": 10000,
+    "plan_id": 3
+})
+
+await Users.create({
+    "name": "Beatriz",
+    "age": 20,
+    "birthday": "2000-03-05",
+    "cell_phone_number": "(25) 92345-1365",
+    "cpf":"087.453.097-04",
+    "email":"bia321@gmail.com",
+    "password":"B1a123",
+    "amount_points": 1300,
+    "plan_id": 2
 })
