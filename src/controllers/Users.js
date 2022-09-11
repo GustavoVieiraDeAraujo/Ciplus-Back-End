@@ -51,7 +51,7 @@ export const ControllerUsers = {
 
     async UpdatePut(request, response){
         try{
-            if (Object.keys(request.body).length === 7){
+            if (Object.keys(request.body).length === 9){
                 const User = await Users.findByPk(request.params.id)
                 if (!User){
                     throw new Error("User not found")
