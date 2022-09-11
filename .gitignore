@@ -1,2 +1,5 @@
 # Pasta de dependencias dos pacotes
 node_modules/
+
+# Retirando package json
+package-lock.json
