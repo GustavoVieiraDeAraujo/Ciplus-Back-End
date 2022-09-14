@@ -108,24 +108,16 @@ export const ControllerUsers = {
 
     async DeleteMany(request, response){
         try{
-            if (Array.isArray(request.body.lista)){
-                try{
-                    for (let i = 0; i< request.body.lista.length; i++){
-                        const id = request.body.lista[i]
-                        const User = await Users.findByPk(id)
-                        if (!User){
-                            throw new Error(`User with id ${id} not found`)
-                        }else{
-                            await User.destroy({where: {id}})
-                        }
-                    }
-                    response.status(201).send("Successfully deleted Users")
-                }catch(e){
-                    response.status(404).send(e.message)
+            for (let i = 0; i< request.body.lista.length; i++){
+                const id = request.body.lista[i]
+                const User = await Users.findByPk(id)
+                if (!User){
+                    throw new Error(`User with id ${id} not found`)
+                }else{
+                    await User.destroy({where: {id}})
                 }
-            }else{
-                throw new Error(`The object isn't a list but is ${request.body}`)
             }
+            response.status(201).send("Successfully deleted Users")
         }catch(e){
             response.status(400).send(e.message)
         }
