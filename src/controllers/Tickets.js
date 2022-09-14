@@ -105,10 +105,10 @@ export const ControllerTickets = {
 
     async DeleteMany(request, response){
         try{
-            if (Array.isArray(request.body)){
+            if (Array.isArray(request.body.lista)){
                 try{
-                    for (let i = 0; i< request.body.length; i++){
-                        const id = request.body[i]
+                    for (let i = 0; i< request.body.lista.length; i++){
+                        const id = request.body.lista[i]
                         const Ticket = await Tickets.findByPk(id)
                         if (!Ticket){
                             throw new Error(`Ticket with id ${id} not found`)

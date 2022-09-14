@@ -105,10 +105,10 @@ export const ControllerMovies = {
 
     async DeleteMany(request, response){
         try{
-            if (Array.isArray(request.body)){
+            if (Array.isArray(request.body.lista)){
                 try{
-                    for (let i = 0; i< request.body.length; i++){
-                        const id = request.body[i]
+                    for (let i = 0; i< request.body.lista.length; i++){
+                        const id = request.body.lista[i]
                         const Movie = await Movies.findByPk(id)
                         if (!Movie){
                             throw new Error(`Movie with id ${id} not found`)
