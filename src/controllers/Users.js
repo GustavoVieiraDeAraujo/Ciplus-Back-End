@@ -108,7 +108,7 @@ export const ControllerUsers = {
 
     async DeleteMany(request, response) {
         try {
-            if (Array.isArray(request.body.data.lista)) {
+            if (Array.isArray(request.body.data)) {
                 try {
                     for (let i = 0; i < request.body.data.lista.length; i++) {
                         const id = request.body.data.lista[i]
