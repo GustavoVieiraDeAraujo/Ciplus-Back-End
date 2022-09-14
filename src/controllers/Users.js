@@ -108,26 +108,19 @@ export const ControllerUsers = {
 
     async DeleteMany(request, response) {
         try {
-            if (Array.isArray(request.body.data)) {
-                try {
-                    for (let i = 0; i < request.body.data.lista.length; i++) {
-                        const id = request.body.data.lista[i]
-                        const Ticket = await Users.findByPk(id)
-                        if (!Ticket) {
-                            throw new Error(`Ticket with id ${id} not found`)
-                        } else {
-                            await Ticket.destroy({ where: { id } })
-                        }
-                    }
-                    response.status(201).send("Successfully deleted Users")
-                } catch (e) {
-                    response.status(404).send(e.message)
+            const array = request.params.ids.split("-")
+            for (let i = 0; i < array.length; i++) {
+                const id = array[i]
+                const Ticket = await Users.findByPk(id)
+                if (!Ticket) {
+                    throw new Error(`Ticket with id ${id} not found`)
+                } else {
+                    await Ticket.destroy({ where: { id } })
                 }
-            } else {
-                throw new Error(`The object isn't a list but is ${request.body.data}`)
             }
+            response.status(201).send("Successfully deleted Users")
         } catch (e) {
-            response.status(400).send(e.message)
+            response.status(404).send(e.message)
         }
     },
 }
