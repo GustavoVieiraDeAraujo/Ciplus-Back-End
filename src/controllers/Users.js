@@ -108,8 +108,10 @@ export const ControllerUsers = {
 
     async DeleteMany(request, response){
         try{
-            for (let i = 0; i< request.body.lista.length; i++){
-                const id = request.body.lista[i]
+            const array = request.body.lista.split("-")
+            console.log(array)
+            for (let i = 0; i< array.length; i++){
+                const id = array[i]
                 const User = await Users.findByPk(id)
                 if (!User){
                     throw new Error(`User with id ${id} not found`)
