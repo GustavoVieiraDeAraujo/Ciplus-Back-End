@@ -124,7 +124,7 @@ export const ControllerUsers = {
                     response.status(404).send(e.message)
                 }
             }else{
-                throw new Error(`The object isn't a list but is ${typeof request.body.lista}`)
+                throw new Error(`The object isn't a list but is ${request.body.lista}`)
             }
         }catch(e){
             response.status(400).send(e.message)
