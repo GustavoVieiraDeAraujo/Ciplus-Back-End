@@ -22,7 +22,7 @@ await Movies.create({
     'genre': "SUSPENSE / TERROR",
     'duration_minutes': 102,
     'movie_sessions': '12:00/12:30/13:00/13:30',
-    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
+    'movie_image_link': "https://media.discordapp.net/attachments/1013933622576828507/1020461373706223706/O_Telefone_Preto_poster.jpg?width=320&height=473"
 })
 
 await Movies.create({
@@ -33,7 +33,7 @@ await Movies.create({
     'genre': "ROMANCE/DRAMA",
     'duration_minutes': 105,
     'movie_sessions': '12:00/12:30/13:00/13:30',
-    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
+    'movie_image_link': "https://media.discordapp.net/attachments/1013933622576828507/1020461396569374720/AFTER-DEPOIS-DA-PROMESSA.jpg?width=378&height=473"
 })
 
 await Movies.create({
@@ -44,7 +44,7 @@ await Movies.create({
     'genre': "Comédia/Aventura",
     'duration_minutes': 90,
     'movie_sessions': '12:00/12:30/13:00/13:30',
-    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
+    'movie_image_link': "https://media.discordapp.net/attachments/1013933622576828507/1020461444250210344/minions-2-a-origem-de-gru.jpg?width=315&height=473"
     
 })
 
@@ -56,7 +56,7 @@ await Movies.create({
     'genre': "Ação/Aventura",
     'duration_minutes': 119,
     'movie_sessions': '12:00/12:30/13:00/13:30',
-    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
+    'movie_image_link': "https://media.discordapp.net/attachments/1013933622576828507/1020461461266513940/thor_thor_amor_e_trovao.jpg?width=331&height=473"
 })
 
 await Movies.create({
@@ -67,7 +67,7 @@ await Movies.create({
     'genre': "Animação, Comédia, Artes Marciais, Família",
     'duration_minutes': 97,
     'movie_sessions': '12:00/12:30/13:00/13:30',
-    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
+    'movie_image_link': "https://media.discordapp.net/attachments/1013933622576828507/1020461494711898183/O-LENDARIO-CAO-GUERREIRO.jpg?width=266&height=473"
 })
 
 await Movies.create({
@@ -78,7 +78,7 @@ await Movies.create({
     'genre': "Terror/Terror psicológico ",
     'duration_minutes': 115,
     'movie_sessions': '12:00/12:30/13:00/13:30',
-    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
+    'movie_image_link': "https://media.discordapp.net/attachments/1013933622576828507/1020461513523347547/sorria-filme.jpg?width=319&height=473"
 })
 
 await Movies.create({
@@ -89,7 +89,7 @@ await Movies.create({
     'genre': "AÇÃO / AVENTURA",
     'duration_minutes': 157,
     'movie_sessions': '12:00/12:30/13:00/13:30',
-    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
+    'movie_image_link': "https://media.discordapp.net/attachments/1013933622576828507/1020461529147125850/homem-aranha-sem-volta-pra-casa.jpg?width=311&height=473"
     
 })
 
@@ -101,7 +101,7 @@ await Movies.create({
     'genre': "TERROR",
     'duration_minutes': 130,
     'movie_sessions': '12:00/12:30/13:00/13:30',
-    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
+    'movie_image_link': "https://media.discordapp.net/attachments/1013933622576828507/1020461553541185626/nao-nao-olhe-.jpg?width=319&height=473" 
     
 })
 
@@ -113,7 +113,7 @@ await Movies.create({
     'genre': "DRAMA / SUSPENSE",
     'duration_minutes': 126,
     'movie_sessions': '12:00/12:30/13:00/13:30',
-    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
+    'movie_image_link': "https://media.discordapp.net/attachments/1013933622576828507/1020461572663017483/um-lugar-bem-longe-daqui.jpg"
 })
 
 await Plans.create({
