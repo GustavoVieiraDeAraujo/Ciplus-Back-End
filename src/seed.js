@@ -10,7 +10,8 @@ await Movies.create({
     'classification': 'CLASSIFICAÇÃO-16',
     'genre': "SUSPENSE / TERROR",
     'duration_minutes': 99,
-    'movie_sessions': '12:00/12:30/13:00/13:30'
+    'movie_sessions': '12:00/12:30/13:00/13:30',
+    'movie_image_link':'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
 })
 
 await Movies.create({
@@ -20,7 +21,8 @@ await Movies.create({
     'classification': 'CLASSIFICAÇÃO-16',
     'genre': "SUSPENSE / TERROR",
     'duration_minutes': 102,
-    'movie_sessions': '12:00/12:30/13:00/13:30'
+    'movie_sessions': '12:00/12:30/13:00/13:30',
+    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
 })
 
 await Movies.create({
@@ -30,7 +32,8 @@ await Movies.create({
     'classification': 'CLASSIFICAÇÃO-16',
     'genre': "ROMANCE/DRAMA",
     'duration_minutes': 105,
-    'movie_sessions': '12:00/12:30/13:00/13:30'
+    'movie_sessions': '12:00/12:30/13:00/13:30',
+    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
 })
 
 await Movies.create({
@@ -40,7 +43,8 @@ await Movies.create({
     'classification': 'CLASSIFICAÇÃO-LIVRE',
     'genre': "Comédia/Aventura",
     'duration_minutes': 90,
-    'movie_sessions': '12:00/12:30/13:00/13:30'
+    'movie_sessions': '12:00/12:30/13:00/13:30',
+    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
     
 })
 
@@ -51,7 +55,8 @@ await Movies.create({
     'classification': 'CLASSIFICAÇÃO-14',
     'genre': "Ação/Aventura",
     'duration_minutes': 119,
-    'movie_sessions': '12:00/12:30/13:00/13:30'
+    'movie_sessions': '12:00/12:30/13:00/13:30',
+    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
 })
 
 await Movies.create({
@@ -61,7 +66,8 @@ await Movies.create({
     'classification': 'CLASSIFICAÇÃO-LIVRE',
     'genre': "Animação, Comédia, Artes Marciais, Família",
     'duration_minutes': 97,
-    'movie_sessions': '12:00/12:30/13:00/13:30' 
+    'movie_sessions': '12:00/12:30/13:00/13:30',
+    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
 })
 
 await Movies.create({
@@ -71,7 +77,8 @@ await Movies.create({
     'classification': 'CLASSIFICAÇÃO-14',
     'genre': "Terror/Terror psicológico ",
     'duration_minutes': 115,
-    'movie_sessions': '12:00/12:30/13:00/13:30' 
+    'movie_sessions': '12:00/12:30/13:00/13:30',
+    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
 })
 
 await Movies.create({
@@ -81,7 +88,8 @@ await Movies.create({
     'classification': 'CLASSIFICAÇÃO-12',
     'genre': "AÇÃO / AVENTURA",
     'duration_minutes': 157,
-    'movie_sessions': '12:00/12:30/13:00/13:30'
+    'movie_sessions': '12:00/12:30/13:00/13:30',
+    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
     
 })
 
@@ -92,7 +100,8 @@ await Movies.create({
     'classification': 'CLASSIFICAÇÃO-14',
     'genre': "TERROR",
     'duration_minutes': 130,
-    'movie_sessions': '12:00/12:30/13:00/13:30'
+    'movie_sessions': '12:00/12:30/13:00/13:30',
+    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
     
 })
 
@@ -103,7 +112,8 @@ await Movies.create({
     'classification': 'CLASSIFICAÇÃO-14',
     'genre': "DRAMA / SUSPENSE",
     'duration_minutes': 126,
-    'movie_sessions': '12:00/12:30/13:00/13:30'
+    'movie_sessions': '12:00/12:30/13:00/13:30',
+    'movie_image_link': 'https://media.discordapp.net/attachments/1013933622576828507/1020143214793076778/aorfa2.jpg?width=315&height=473'
 })
 
 await Plans.create({
@@ -116,22 +126,22 @@ await Plans.create({
 await Plans.create({
     'type':"Plan Standart",
     'price': 7990,
-    'benefits':"2 ingressos Prata por mês, 35% de desconto no combo de pipoca e refrigerante, 35% de descontos nas salas IMAX 4K e 3D",
+    'benefits':"2 ingressos Prata por mês, 35% de desconto no combo de pipoca e refrigerante, 25% de desconto em todos os ingressos, exceto platina e diamante",
     'duration_months': 1
 })
 
 await Plans.create({
     'type':"Plan Premium",
     'price': 9990,
-    'benefits':"3 ingressos Gold por mês, 60% de desconto no combo de pipoca e refrigerante, 60% de descontos nas salas IMAX 4K e 3D",
+    'benefits':"3 ingressos Gold por mês, 50% de desconto no combo de pipoca e refrigerante, 35% de desconto em todos os ingressos",
     'duration_months': 1
 })
 
 
 await Plans.create({
     'type':"Plan Black Duo",
-    'price': 15990,
-    'benefits':"4 ingressos Duplos Platina por mês, combo de pipoca e refrigerante inclusos, salas IMAX 4K e 3D inclusos ",
+    'price': 17990,
+    'benefits':"2 ingressos Platina e Diamante por mês, 2 combos de pipoca e refrigerante inclusos por mês, 50% de desconto em todos os ingressos",
     'duration_months': 1
 })
 

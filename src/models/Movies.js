@@ -55,6 +55,13 @@ Movies.init({
             is: /([01]?[0-9]|2[0-3]):[0-5][0-9][/]/g,
             notNull: true
         },
+    },
+    movie_image_link: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            notNull: true
+        },
     }
 },{
     sequelize,
