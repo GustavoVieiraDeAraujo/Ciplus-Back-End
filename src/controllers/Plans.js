@@ -6,7 +6,7 @@ export const ControllerPlans = {
     async GetAll(request, response){
         try{
             // Pegando todos os planos e filtrando as colunas que vão ser retornadas
-            const allPlans = await Plans.findAll({include:{ model: Users, attributes:{exclude: ['id','plan_id','password']}}, attributes: {exclude: ["id"]}})
+            const allPlans = await Plans.findAll({include:{ model: Users, attributes:{exclude: ['id','plan_id','password']}}})
             response.status(200).json(allPlans)
         }catch(e){
             response.status(400).send(e.message)
@@ -16,7 +16,7 @@ export const ControllerPlans = {
     async GetOne(request, response){
         try{
             // Pegando o plano pelo id e filtrando as colunas que vão ser retornadas
-            const Plan = await Plans.findOne({ where: { id:request.params.id  }, attributes: {exclude: ['id']}, include:{ model: Users, attributes:{exclude: ['id','plan_id','password']}}})
+            const Plan = await Plans.findOne({ where: { id:request.params.id  }, include:{ model: Users, attributes:{exclude: ['id','plan_id','password']}}})
             if (!Plan){
                 throw new Error("Plan not found")
             }else{
